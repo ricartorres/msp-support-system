@@ -65,5 +65,5 @@ app.get("/tickets", (req, res) => {
 
 app.listen(6000, () => {
   --console.log("MSP Support System corriendo en puerto 6000");
-  console.log("CI funcionando correctamente");
+  console.log("CI funcionando correctamente 1");
 });
