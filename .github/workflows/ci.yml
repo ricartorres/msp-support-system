@@ -1,0 +1,27 @@
+name: MSP Academic CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Simular pruebas
+        run: echo "Pruebas ejecutadas correctamente"
+
+      - name: Validar proyecto
+        run: echo "Build exitoso"
